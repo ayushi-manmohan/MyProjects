@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/73dc61bd9b.js" crossorigin="anonymous"></script>
+    <title>SI Calculator</title>
+    <style type="text/css">
+    </style>
+
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Simple Interest Calculator</h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <form>
+                        <div class="form-group">
+                            <label class="form-group">Principal</label>
+                             <input class="form-control" type="text" id="principal">
+
+                        </div>
+                        <div class="form-group">
+                            <label class="form-group">Years</label>
+                             <input class="form-control" type="text" id="years">
+                             
+                        </div>
+                        <div class="form-group">
+                            <label class="form-group">Rate of interest</label>
+                             <input class="form-control" type="text" id="rate">
+                        </div>
+                        <button type="button" class="btn btn-primary"onClick="calculate()" >Calculate</button>
+             
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 id='res'>$</h1>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            function calculate(){
+                var p=0;
+                var n=0;
+                var r=0;
+                var SI=0;
+
+                p=parseInt(document.getElementById('principal').value);
+                n=parseInt(document.getElementById('years').value);
+                r=parseInt(document.getElementById('rate').value);
+
+                SI=(p*n*r)/100;
+                document.getElementById("res").innerHTML=SI;
+
+
+
+
+            }
+        </script>
+       
+</body>
+    </html>
