@@ -1,0 +1,283 @@
+
+
+<html>
+
+    <head>
+        
+        <title>The Drama World</title>
+    
+		<style type="text/css">
+		
+		#topbar{
+		width: 1500px;
+		margin:0 auto;        
+        height: 40px;
+        }
+
+        body{
+            padding: 0;
+            margin: 0;
+            font-family:Arial, Helvetica, sans-serif;
+            color:#6E6E6DFF; 
+        }
+		#logo{
+            margin-top: 5px;
+            margin-right: 8px;
+            margin-left: 8px;
+            margin-bottom: 5px;
+            float: left;
+
+        }
+		.topbar-section{
+
+            float:left;
+           /* border-left:1px grey solid;*/
+            height: 50px;
+            color: #6E6E6DFF;
+            margin-top: 8px;
+            margin-right: 8px;
+
+        }
+        .topbar-menu{
+
+            font-weight: bold;
+            color: #6E6E6DFF;
+            font-size: 18px;
+           padding: 15px 15px 0 15px;
+             height:50px;
+             background-color: #FFCFD7;
+        }
+		
+        #search-box{
+            background-color:#FFCFD7;
+            border:none;
+            font-weight: bold;
+            color: #6E6E6DFF;
+            font-size: 16px;
+            padding: 5px;
+            margin: 11px 0 5px;
+            float: left;
+            
+        }
+        #mag{
+            float: left;
+            width: 24px;
+            height: 24px;
+            margin: 13px 1;
+            background-color:black;
+            border-color: black;
+            
+        }
+        #Sign-in-Div{
+            float: right;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 15px 15px 0px 24px;
+             height:50px;
+             background-color: #FFCFD7;
+             
+        }
+        .clear{
+            clear: both;
+        }
+       
+        
+#simple-bar-section{
+    width: 1500px;
+		margin:0 auto; 
+    background-color: #6D6D6D;
+            width: 100%;
+            height: 50px;
+            float:left;
+            /* border-left:1px grey solid;*/
+
+            color:  #FFCFD7;
+         /*  margin-top: 8px;
+           margin-right: 8px;*/
+
+}
+#simple-bar{
+float: left;
+font-weight: bold;
+color:  #FFCFD7;
+font-size: 18px;
+padding: 15px 15px 0 15px;
+ height:50px;
+ background-color: #6E6E6DFF;
+}
+        .clear{
+            clear: both;
+        }
+        
+        * {
+  box-sizing: border-box;
+}
+
+#bodyParts {
+  font-family: "Muli", sans-serif;
+  display: flex;
+  align-items: absolute;
+  justify-content: absolute;
+  height: 100vh;
+  overflow: hidden;
+  margin: 20px 50px 50px 50px; ;
+}
+.Container {
+  display: flex;
+  width: 90vw;
+}
+
+
+.panel {
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no repeat;
+  height: 60vh;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: flex 0.7s ease-in;
+}
+
+.panel h3 {
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.panel.active {
+  flex: 5;
+}
+
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media (max-width: 480px) {
+  .Container {
+    width: 100vw;
+  }
+
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none;
+  }
+}
+		
+
+		</style>
+    </head>
+
+    <body>
+    
+        <div id="topbar">
+            <img id="logo" src="TITLE2.png" alt="The Drama World" width="300" height="60">
+        
+                
+                <div class="topbar-section topbar-menu">
+                          Home
+                </div>   
+                
+                <div class="topbar-section topbar-menu">
+                    Explore
+                </div>
+                
+                <div class="topbar-section topbar-menu">
+                    Dramas/Series
+                </div>   
+          
+                <div class="topbar-section topbar-menu">
+                    Movies
+                </div>   
+                    
+                <div class="topbar-section topbar-menu">
+                    More
+                </div>   
+
+                <div class="topbar-section">
+                    <input type="text" id="search-box" value="Search">
+                    <input type="image" id="mag" src="magnifyingGlass.png">
+                </div>
+
+                <div class="topbar-section">
+                <span id="Sign-in-Div">Sign-in
+                    <img src="sign-in.png" width="20px" height="20px"> 
+                </span>
+               </div>
+        </div>
+        <div class="clear"></div>
+        
+        <div id="simple-bar-section">
+            <div id="simple-bar">
+                Latest Reviews
+            </div>
+            <div id="simple-bar">
+                Entertainment News
+            </div>
+            <div id="simple-bar">
+                Events
+            </div>
+            
+           
+        
+        </div>
+
+        <div class="clear"></div>
+
+        <div id="bodyParts">
+            <div class="Container">
+                <div class="active panel" style="background-image: url('truebeauty.jpg');">
+                    <h3>True Beauty</h3>
+                    </div>
+    
+            
+                <div class="active panel" style="background-image: url('color.jpg');">
+                    <h3>Color Rush</h3>
+                    </div>
+                    
+                <div class="active panel" style="background-image: url('https://6.vikiplatform.com/image/14cae1eaf3c349a5a5240e0732c8610b.jpg?x=b&a=0x0&s=1600x900&e=t&q=g');">
+                    <h3>To My Star</h3>
+                    </div>
+                 
+                    
+                <div class="active panel" style="background-image: url('https://6.vikiplatform.com/image/0b8ab3bca9614215a7af005245ca47ec.jpg?x=b&a=0x0&s=1600x900&e=t&q=g');">
+                    <h3>Go Go Squid 2: Dt, Appledog's Time</h3>
+                    </div>  
+                 
+                <div class="active panel" style="background-image: url('https://6.vikiplatform.com/image/58aabc17da394db8ae240bb538977924.jpg?x=b&a=0x0&s=1600x900&e=t&q=g');">
+                    <h3>Flower Of Evil</h3>
+                    </div>      
+              </div>
+            
+            </div>
+      
+        <script type="text/javascript">
+             const panels= document.querySelectorAll('.panel');
+
+panels.forEach(panel => {
+    panel.addEventListener('click', () => {
+        removeActiveClasses()
+        panel.classList.add('active')
+    })
+}
+)
+
+function removeActiveClasses() {
+    panels.forEach(panel=>{
+        panel.classList.remove('active')
+    })
+}     
+           
+            
+        </script>
+        
+    </body>
+
+</html>
